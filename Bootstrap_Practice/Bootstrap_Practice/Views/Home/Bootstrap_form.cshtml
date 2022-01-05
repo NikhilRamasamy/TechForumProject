@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Bootstrap_form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bootstrap_form</h2>
+<html>
+<head>
+    <title>Bootstrap_Form</title>
+</head>
+<body>
+    <!--Form-->
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <lable for="email">Email</lable>
+                <input type="email" name="email" placeholder="email" required class="form-control">
+
+                <lable for="Username">Username</lable>
+                <input type="email" name="Username" placeholder="Username" required class="form-control">
+
+                <lable for="Password1">Password</lable>
+                <input type="Password" name="Password1" required class="form-control">
+
+                <lable for="Password2">Password</lable>
+                <input type="Password" name="Password2" required class="form-control">
+
+            </div>
+            <a href="#" class="btn btn-outline-success">Submit!</a>
+        </form>
+    </div>
+
+    <!--jumbotron-->
+
+    <div class="jumbotron">
+
+        <h1 class="display-3">Welcome to my Website.</h1>
+
+
+        <p>This is a simple jumbotron that draws attention</p>
+
+
+        <hr class="my-4">
+
+        <p>One of the seminal insights in the early development of graphical user interfaces, MVC became one of the first approaches to describe and implement software constructs in terms of their responsibilities.</p>
+
+        <a href="" class="btn btn-info">Learn More!</a>
+    </div>
+
+    <!--lists-->
+
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary">one</li>
+            <li class="list-group-item">two</li>
+            <li class="list-group-item">three</li>
+            <li class="list-group-item justify-content-between">hi
+            <span class="badge badge-primary"> This is also a part</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+

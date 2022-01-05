@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserLogin</title>
+    <script src="D:\sathish\my works\.NET\JQuery\jquery-3.6.0.min">
+
+    </script>
+    <script>
+        function regilog() {
+            document.location.href = "/Login/employeelogin";
+        }
+        function loginsub() {
+            var username = $("#textbox1").val();
+            var password = $("#pas1").val();
+            $.post("/Login/checkdata", { empusername: username, emppassword: password }, success);
+
+        }
+        function success(tf) {
+            alert(tf);
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        Employee Login
+    </div>
+    <div>
+        <h3>Username:<input type="text" id="textbox1"/></h3><br>
+        <h3>password:<input type="password" id="pas1" /></h3><br>
+        <h3><input type="submit" id="s1" value="submit" onclick="loginsub();" /></h3>
+        <br><br>
+        <h4 onclick="regilog();">Register</h4>
+    </div>
+</body>
+</html>

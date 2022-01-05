@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Bootstrap_List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bootstrap_List</h2>
+<html>
+<head>
+    <title>list</title>
+</head>
+<body>
+
+    <!-- dropdown-->
+
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+
+            <div class="dropdown-menu" x-placement="botton-start" style="position:absolute; will-change:transform; top:0px; left:0px; transform:translate3d(0px, 38px, 0px);">
+                <a href="#" class="dropdown-item">Home</a>
+                <a href="#" class="dropdown-item">Shop</a>
+                <a href="#" class="dropdown-item">Cart</a>
+                <a href="#" class="dropdown-item">Checkout</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">profile</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Botton grouping-->
+
+    <div class="btn-group">
+        <a href="#" class="btn btn-success">one</a>
+        <a href="#" class="btn btn-success">two</a>
+        <a href="#" class="btn btn-success">three</a>
+    </div>
+
+    <!-- checkboxes-->
+
+    <div class="btn-group btn-group-toggle" data-toggle="button">
+        <lable class="btn btn-outline-primary active">
+            <input type="checkbox" name="">checkbox1
+        </lable>
+        <lable class="btn btn-outline-priamary">
+            <input type="checkbox" name="">checkbox2
+        </lable>
+    </div>
+
+    <!--cards-->
+
+    <div class="container">
+        <div class="card bg-primary text-white mb-3 text-center">
+            <div class="card-body">
+                <blockquote class="card-blockquote">
+                    <p>A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company.</p>
+                    <footer>some famous person
+                        <cite title="title">person</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

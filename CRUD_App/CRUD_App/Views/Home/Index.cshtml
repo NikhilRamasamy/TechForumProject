@@ -1,0 +1,158 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!--
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+    -->
+<html>
+<head>
+    <title>
+        crud application
+    </title>
+    <style>
+        .new{
+            background-color:blue;
+            border-radius:5px;
+            color:white;
+            border:none;
+            padding:5px 5px 5px 5px;
+        }
+        .ex{
+            background:green;
+            border-radius:5px;
+            color:white;
+            border:none;
+            padding:5px 5px 5px 5px;
+        }
+        .del{
+            background:red;
+            border-radius:5px;
+            color:white;
+            border:none;
+            padding:5px 5px 5px 5px;
+        }
+        .export_id{
+            float:right;
+        }
+        .search_box{
+            clear:both;
+            float:right;
+        }
+        .table_cls{
+            clear:both;
+        }
+        table {
+            border: 1px solid black;
+        }
+        tr {
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+            width:400px;
+        }
+        h1{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD_App</h1>
+    <button class="new">+ New</button>
+    <div class="export_id">
+    <button class="ex">Export</button>
+    </div>
+    <div class="search_box">
+        <label>Search:</label><input type="text" id="text1" />
+    </div>
+    <div class="table_cls">
+    
+                          <table class="table-bordered">
+                              <tr>
+                                  <td><h3>ID</h3></td>
+                                  <td><h3>Firstname</h3></td>
+                                  <td><h3>Lastname</h3></td>
+                                  <td><h3>Address</h3></td>
+                                  <td><h3>Action</h3></td>
+                              </tr>
+                              <tr>
+                                  <td>1</td>
+                                  <td>neovic</td>
+                                  <td>devierte</td>
+                                  <td>silay city</td>
+                                  <td>
+                                      <button class="ex">Edit</button>
+                                      <button class="del">Delete</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>gemalyn</td>
+                                  <td>cepe</td>
+                                  <td>carmen bohol</td>
+                                  <td>
+                                      <button class="ex">Edit</button>
+                                      <button class="del">Delete</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>lee</td>
+                                  <td>apilinga</td>
+                                  <td>bacolod</td>
+                                  <td>
+                                      <button class="ex">Edit</button>
+                                      <button class="del">Delete</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td>julyn</td>
+                                  <td>cepe</td>
+                                  <td>eb magalona</td>
+                                  <td>
+                                      <button class="ex">Edit</button>
+                                      <button class="del">Delete</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>5</td>
+                                  <td>cristineeeee</td>
+                                  <td>demapanag</td>
+                                  <td>talisay</td>
+                                  <td>
+                                      <button class="ex">Edit</button>
+                                      <button class="del">Delete</button>
+                                  </td>
+                              </tr>
+                          </table> 
+     
+    </div>
+</body>
+</html>
